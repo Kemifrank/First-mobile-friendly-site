@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Responsive website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body style="min-height: 390px;">
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel
+  " aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-warning">
+          <h5 class="modal-title" id="myModalLabel">Book Your Holiday Here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form> 
+            <div class="mb-3">
+            <label for="fullname" class="form-label" aria-describedby="fullnameHelp">Full Name</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label" aria-describedby="emailHelp">Email</label>
+            <input type="email" class="form-control">
+            <div class="form-text" id="infoHelp">We will never share your credentials with a third party</div>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" aria-label="select Menu">
+              <option value="">Select Your Holiday Package</option>
+              <option value="package-1">Holidays package 1</option>
+              <option value="package-2">Holidays package 2</option>
+              <option value="package-3">Holidays package 3</option>
+            </select>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox">
+            <label for="checkbox" class="form-check-label">I agree to the terms and Condition</label>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/img/logo__1_-removebg-preview.png" alt="" width="60px" height="60px" style="background-color: #f5b700;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tickets&booking.html">Tickets & Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="places_to_go.html">Places to go</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accomodation.html">Accommodation</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          
+          
+        </ul>
+        <ul class="navbar me-0 mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+               Book Here</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="container mt-5" >
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 text-info fw-bold">Enugu Golf Course</h1>
+      <p class="lead">
+        Enugu Golf Club plays host to both local and international tournaments in collaboration with Golf Associations around the country. An ideal place for relaxation during and after the tournament, the club has a beautiful 18 hole golf course with an all year round season which has been become a solid attraction for both locals and tourists alike. Enugu Golf Club also features a clubhouse and a well stocked bar.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="create-head-section" class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h1 class="display-4 text-white fw-bold">Enugu Foods</h1>
+        <p class="lead text-dark fw-bold">
+          Enjoying the local food and cuisine of your host is a must do for every visitor or intending visitor, every country, state or city is known for one particular food or the other. The Igbo people of Nigeria are known for numerous traditional food that are exclusively theirs and most of these food has its origin and are best known with the people of Enugu.  Enugu no doubt is the home of cuisine in Nigeria and Igbo land in particular. For traveler and tourists who intend to visit Enugu, i will be sharing with you all in this second of my series Best of Enugu, “top seven most popular Enugu food”. without tasting these food, your visit to Enugu is incomplete, in fact; you have not visited Enugu at all if you fail to eat these foods.
+        </p>
+        <a href="#" class="btn btn-outline-light">Find Out More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="explore-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/img/okpa (1).jpg"  alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+      
+        <div class="col-md-6">
+          <h3>Explore Our Amazing Foods</h3>
+          <p>Okpa
+            Okpa, also referred to as king’s meal or lion’s food is a popular Igbo dish of Eastern Nigeria which originated from Enugu. Okpa is made from bambara flour gotten from bambara nut.   
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                 Okpa can best be eaten with. Coke, Pap, soaked garri or tea
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Okpa is made from bambara flour gotten from bambara nut
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                okpa is very easy to prepare as few ingredients are required and it takes just about 45 to 50 minutes to cook.
+              </div>
+            </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+  </section>
+
+  <section id="create-head-section" class="bg-danger">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h1 class="display-4 text-white fw-bold">NightLife in Enugu</h1>
+        <p class="lead text-dark fw-bold">
+          Enugu, the capital city of Enugu State is a good destination for relaxation and lighter-mood activities.The city is another hub of entertainment and social activities in Nigeria, especially in the Southeast.
+        </p>
+        <a href="#" class="btn btn-outline-light">Find Out More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="explore-section" class="bg-light text-muted py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Explore NightLife</h3>
+          <p>If you’re driving through the city or you’re in the Southeast for any reason and you feel like hopping into a night club for a remarkable experience, there are standout destinations you should checkout.   
+            </p>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Toscana Night Club
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Platinum Lounge
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="p-4 align-self-start">
+                <i class="fas fa-check fa-2x"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                Timeless Lounge
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <img src="/img/nike-lake-resort-pool.jpg"  alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+
+      </div>
+      
+    </div>
+
+
+  </section>
+
+
+ 
+ <footer>
+   <nav class="navbar navbar-dark bg-dark">
+     <div class="container-fluid text-white text-decoration-none">
+       <p>&copy2020-2022 Sly Travels Intl. &middot;
+         <a href="#" class="text-decoration-none">Privacy</a>
+         &middot; <a href="#" class="text-decoration-none text-white">Terms</a>
+       </p>
+
+       <p><a href="#" class="text-decoration-none  text-white ">Back To Top</a></p>
+
+       <div class="footer-social">
+         <span>Follow us on:</span>
+         <a href="#" class="text-primary"><i class="fab fa-facebook-square fa-1x"></i></a>
+         <a href="#" class="text-primary"><i class="fab fa-twitter fa-1x"></i></a>
+         <a href="#" class="text-danger"><i class="fab fa-youtube fa-1x"></i></a>
+         <a href="#" style="color: RGB(188, 42, 141);"><i class="fab fa-instagram fa-1x"></i></a>
+         <a href="#" style="color: #075e54;"><i class="fab fa-whatsapp fa-1x"></i></a>
+       </div>
+     </div>
+
+   </nav>
+ </footer>
+  
+</body>
+</html>
